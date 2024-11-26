@@ -1,6 +1,5 @@
 import axios from "axios";
 
-// The base URL where our API lives
 const API_URL = "http://localhost:3004/items";
 
 // Get all offers
