@@ -15,10 +15,7 @@ const Navigationbar = () => {
         <a href="/demo" className="nav-item">App Demo</a>
         <a href="/contact" className="nav-item">Contact Us</a>
         <a href="/" className="logo-link">
-          <img
-           src=""
-           alt='logo'
-           />
+          
         </a>
       </div>
     </nav>
