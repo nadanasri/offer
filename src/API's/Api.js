@@ -1,11 +1,7 @@
 import axios from 'axios';
 
-export const SERVER_URL = 'http://localhost:3004';
-
-// Create and export the base axios instance
-export const axiosInstance = axios.create({
-  baseURL: SERVER_URL,
-  headers: {
-    'Content-Type': 'application/json'
-  }
+export const Api = axios.create({
+  baseURL: 'http://localhost:3004', // Base server URL
 });
+
+export default Api;

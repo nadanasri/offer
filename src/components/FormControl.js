@@ -74,11 +74,8 @@ const FormControl = ({ onSubmit, onCancel, editData = null }) => {
   };
 
   return (
-    
-    
+    <div className="form-wrapper">
       <form onSubmit={handleSubmit} className="form-container">
-      <div className='left-form'>
-        
         <div className="form-group">
           <label htmlFor="id">Offer ID:</label>
           <input
@@ -347,22 +344,7 @@ const FormControl = ({ onSubmit, onCancel, editData = null }) => {
             Run Until Paused
           </label>
         </div>
-        
-        
-        {/*<div className="form-group checkbox-group">
-          <label htmlFor="isEnabled">
-            <input
-              type="checkbox"
-              id="isEnabled"
-              name="isEnabled"
-              checked={formData.isEnabled}
-              onChange={handleChange}
-            />
-            Enable Offer
-          </label>
-        </div>*/}
       
-
         <div className="form-actions">
           <button type="button" className="cancel-button" onClick={onCancel}>
             Back
@@ -370,28 +352,9 @@ const FormControl = ({ onSubmit, onCancel, editData = null }) => {
           <button type="submit" className="submit-button">
             {editData ? 'Update' : 'Create Offer'}
           </button>
-          </div>
-          </div>
-          
-      <div className='right-form'>
-      <div class="offer-preview">
-    <h3>Offer Preview</h3>
-    <div class="offer-card">
-      
-      <div class="offer-details">
-        <h4>Berry</h4>
-        <p class="discount">25% Discount</p>
-        <p class="pricing">
-          <span class="original-price">$19.95</span>
-          <span class="discounted-price">$14.97</span>
-        </p>
-      </div>
-      <button class="add-button">Add it now!</button>
-      </div>  
-      </div>
-      </div>
+        </div>
       </form>
-    
+    </div>
   );
 };
 
