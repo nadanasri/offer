@@ -3,7 +3,7 @@ function Offers(){
 
     return(
         <div>
-            <Table />
+            <Table/>
         </div>
     )
 }
